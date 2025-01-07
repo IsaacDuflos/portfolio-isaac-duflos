@@ -14,10 +14,10 @@ export default function Page() {
 
     return (
         <div id="terminal">
-            <Navbar isVisible={isNavbarVisible} />
             <Link href="#" className={"home"} onClick={toggleNavbar}>
                 <Image src={"/logo_terminal.png"} alt={'logo'} width={150} height={150} />
             </Link>
+            <Navbar isVisible={isNavbarVisible} />
             <div id="monitor">
                 <Terminal />
             </div>

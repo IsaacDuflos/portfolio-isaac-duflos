@@ -1,3 +1,4 @@
+
 #crt:before {
     content: " ";
     display: block;
@@ -67,6 +68,7 @@
     border-image-slice: 30 fill;
     border-image-outset: 0;
     overflow: hidden;
+    font-size: 24px;
 }
 
 #terminal {
@@ -94,9 +96,10 @@
     position: relative;
     caret-color: green;
     border: none;
-    color: #fff;
+    color: green;
     outline: none;
     cursor: default;
+    font-size: 24px;
 }
 
 .terminal {
@@ -147,4 +150,201 @@ body {
 
 .navbar.visible {
     max-height: 500px; /* Adjust this value based on your content */
+}
+
+/* styles.css */
+.win95-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 4px 8px;
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    background-color: #c0c0c0;
+    border: 2px solid #fff;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    box-shadow: inset 1px 1px #808080, inset -1px -1px #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.1s;
+    width: 100px;
+
+}
+
+.win95-button:active {
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;
+    background-color: #a0a0a0;
+    width: 100px;
+}
+
+/* styles.css */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #0070f3;
+    text-decoration: none;
+}
+
+/* styles.css */
+.header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.home {
+    margin-right: 20px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #494747;
+    border-radius: 10px;
+    background-color: #292828;
+}
+
+.contact div {
+    margin-bottom: 15px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #494747;
+    background-color: #3a3939;
+    border-radius: 5px;
+}
+
+.contact button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    font-size: 16px;
+    cursor: pointer;
+    color: #00ff00;
+}
+
+.contact button:hover {
+    background-color: #005bb5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.project-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-image {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+
+}
+
+.project-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: justify;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    background-color: #005bb5;
+}
+
+.project-image-precise {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+
 }
